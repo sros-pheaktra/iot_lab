@@ -65,12 +65,12 @@ PASSWORD = "YOUR_WIFI_PASSWORD"
 decimals.
 - Evidence: serial screenshot.
 <img width="991" height="769" alt="image" src="https://github.com/user-attachments/assets/5955689a-ebb8-4083-8749-237051044e82" />
-<img width="970" height="749" alt="image" src="https://github.com/user-attachments/assets/64ef417d-435c-435d-97d2-704bf498eeea" />
+<img width="1285" height="1355" alt="Screenshot 2026-05-27 140242" src="https://github.com/user-attachments/assets/d5ebe11f-4ae3-4b23-9eb0-0b90371bc6c2" />
 
 ### Task 2-Telegram Send
 - Implement send_message() and post a test message to your group.
 - Evidence: chat screenshot.
-<img width="1280" height="675" alt="image" src="https://github.com/user-attachments/assets/0d892f34-527a-49de-a3cc-4917d2b8c1f6" />
+<img width="1788" height="274" alt="image" src="https://github.com/user-attachments/assets/ba6c354f-2247-4cfe-8fc8-2d86ab04da13" />
 
 ### Task 3-Bot Command
 - Implement /status to reply with current T/H and relay state.
