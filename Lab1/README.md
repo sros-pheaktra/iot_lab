@@ -1,3 +1,4 @@
+
 # Lab 1 : Temperature Sensor with Relay Control (Telegram)
 This project uses an ESP32 to measure temperature and humidity with a DHT11 sensor and operate a relay module through Telegram commands.
 
@@ -5,7 +6,7 @@ This project uses an ESP32 to measure temperature and humidity with a DHT11 sens
 - ESP32 Dev Board (MicroPython firmware flashed)
 - DHT11 sensor
 - Relay module
-- jumper wires
+- jumper wiresgit 
 - USB cable + laptop with Thonny
 - Wi-Fi access (internet)
 #### Wiring Connection
