@@ -111,10 +111,7 @@ Insert screenshot of web page:
 ## Evidence Video
 
 Insert video link:
-
-```text
-./video/led_control.MOV
-```
+![LED Control Video](./videos/led_control.MOV)
 
 ---
 
