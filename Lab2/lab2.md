@@ -106,7 +106,7 @@ Two buttons (ON/OFF) are provided on the web page.
 
 Insert screenshot of web page:
 
-![LED Control Page](./images/Screenshot%202026-06-01%20142417.png)
+![LED Control Page](./images/task1.png)
 
 ## Evidence Video
 
@@ -130,12 +130,12 @@ Values refresh every 1–2 seconds.
 
 Insert screenshot:
 
-![Sensor Readings](screenshots/task2-sensors.png)
+![Sensor Readings](./images/task2_.png)
 
 ## Sample Output
 
 ```text
-Temperature: 29°C
+Temperature: 32°C
 Distance: 18 cm
 ```
 
@@ -159,7 +159,7 @@ Displays current temperature value on LCD line 2.
 
 Insert LCD photo:
 
-![LCD Sensor Values](screenshots/task3-lcd.jpg)
+![LCD Sensor Values](./images/task3.png)
 
 ## Example LCD Output
 
