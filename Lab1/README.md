@@ -94,6 +94,5 @@ received.
 - Auto-reconnect Wi-Fi when dropped.
 - Handle Telegram HTTP errors (print status; skip this cycle on failure).
 - Avoid crashing on DHT OSError (skip cycle).
-<img width="1105" height="802" alt="Screenshot 2026-05-25 142810" src="https://github.com/user-attachments/assets/6e8aa279-f3d4-4b6d-b100-182cc5cc303f" />
 
 
