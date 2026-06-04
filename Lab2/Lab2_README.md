@@ -179,7 +179,7 @@ Messages longer than 16 characters automatically scroll.
 ![Textbox Interface](./images/task4.png)
 ## Evidence Video
 
-![LCD Custom Text](./images/task4_output.png)
+![LCD Custom Text](./videos/led_control.MOV)
 
 ---
 
