@@ -24,13 +24,7 @@ This project demonstrates an ESP32-based IoT web server that allows users to:
 
 ---
 
-# Wiring Diagram / Hardware Setup
-
-## Wiring Diagram
-
-> Insert wiring diagram image here.
-
-![Wiring Diagram](images/wiring-diagram.png)
+# Hardware Setup
 
 ## Actual Hardware Setup
 
