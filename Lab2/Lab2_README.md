@@ -36,7 +36,7 @@ This project demonstrates an ESP32-based IoT web server that allows users to:
 
 > Insert photo of your assembled circuit here.
 
-![Hardware Setup](images/hardware-setup.jpg)
+![Hardware Setup](./images/hardware_setup.png)
 
 ---
 
@@ -50,10 +50,10 @@ This project demonstrates an ESP32-based IoT web server that allows users to:
 Required files:
 
 ```text
-main.py
-lcd_api.py
-i2c_lcd.py
-dht.py
+task1.py
+task2.py
+task3.py
+task4.py
 ```
 
 ---
@@ -130,7 +130,7 @@ Values refresh every 1–2 seconds.
 
 Insert screenshot:
 
-![Sensor Readings](./images/task2_.png)
+![Sensor Readings](./images/task2.png)
 
 ## Sample Output
 
@@ -182,17 +182,10 @@ Messages longer than 16 characters automatically scroll.
 
 ## Web Interface Screenshot
 
-![Textbox Interface](screenshots/task4-textbox.png)
-
-## LCD Output Photo
-
-![LCD Custom Text](screenshots/task4-lcd.jpg)
-
+![Textbox Interface](./images/task4.png)
 ## Evidence Video
 
-```text
-videos/task4-custom-text.mp4
-```
+![LCD Custom Text](./images/task4_output.png)
 
 ---
 
@@ -201,57 +194,27 @@ videos/task4-custom-text.mp4
 ```text
 project/
 │
-├── main.py
-├── lcd_api.py
-├── i2c_lcd.py
-├── dht.py
+├── task1.py
+├── task2.py
+├── task3.py
+├── task4.py
 │
 ├── images/
-│   ├── wiring-diagram.png
-│   └── hardware-setup.jpg
+│   └── hardware_setup.jpg
 │
-├── screenshots/
-│   ├── task1-webpage.png
-│   ├── task2-sensors.png
-│   ├── task3-lcd.jpg
-│   ├── task4-textbox.png
-│   └── task4-lcd.jpg
+├── images/
+│   ├── task1.png
+│   ├── task2.png
+│   ├── task3.jpg
+│   ├── task4.png
+│   └── task4_output.jpg
 │
 ├── videos/
 │   ├── task1-led-control.mp4
 │   └── task4-custom-text.mp4
 │
-└── README.md
+└── Lab2_README.md
 ```
-
----
-
-# GitHub Repository
-
-Repository Link:
-
-```text
-https://github.com/yourusername/your-repository
-```
-
----
-
-# Demonstration Video
-
-Video Link:
-
-```text
-https://github.com/yourusername/your-repository/videos/demo.mp4
-```
-
-The demo video includes:
-
-* LED ON/OFF from browser
-* Temperature displayed on LCD
-* Distance displayed on LCD
-* Custom text sent from browser to LCD
-
----
 
 # Challenges Encountered
 
