@@ -85,7 +85,7 @@ decimals.
 - If T ≥ 30 °C and relay is OFF, send an alert every loop (5 s) until /on is
 received.
 - After /on, stop alerts. When T < 30 °C, turn relay OFF automatically and senda one-time “auto-OFF” notice.
-- Evidence: short video (60–90s) demonstrating above behavior https://youtu.be/eMreX57w4FE
+- Evidence: short video demonstrating above behavior: https://drive.google.com/drive/folders/1VnrBR7MSB5RiUfbFV3qyjfMH8sCYUzXm?usp=drive_link 
 #### Flowchart 
 <img width="3148" height="4608" alt="image" src="https://github.com/user-attachments/assets/51a4a24c-8b27-43db-abdd-489e8a91ac2b" />
 
