@@ -27,8 +27,13 @@ PASSWORD = "rbtWIFI@2025"
 # =========================
 BROKER = "test.mosquitto.org"
 PORT = 1883
+<<<<<<< HEAD
 CLIENT_ID = b"esp32_bmp280_1"
 TOPIC = b"/aupp/esp32/bmp280"
+=======
+CLIENT_ID = b"esp32_multi_sensor"
+TOPIC = b"/aupp/esp32/lab4"
+>>>>>>> 559803ef947e370ad9803e48b2405ece4af33c99
 KEEPALIVE = 30
 
 # =========================
