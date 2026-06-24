@@ -1,0 +1,159 @@
+[
+    {
+        "id": "9924cdd99f02fb80",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0f5435e44e64e2b5",
+        "type": "debug",
+        "z": "9924cdd99f02fb80",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c854b40df9b557dc",
+        "type": "mqtt in",
+        "z": "9924cdd99f02fb80",
+        "name": "",
+        "topic": "/aupp/esp32/bmp280",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "8737b1971be786ea",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 420,
+        "wires": [
+            [
+                "0f5435e44e64e2b5",
+                "852f0ade60e0f5d8"
+            ]
+        ]
+    },
+    {
+        "id": "852f0ade60e0f5d8",
+        "type": "function",
+        "z": "9924cdd99f02fb80",
+        "name": "function 1",
+        "func": "var raw = msg.payload;\n\nmsg.measurement = \"bmp280\";\n\nmsg.payload = {\n    temperature: Number(raw.temperature),\n    pressure: Number(raw.pressure),\n    altitude: Number(raw.altitude),\n    gas_raw: Number(raw.gas_raw),\n    gas_average: Number(raw.gas_average),\n    body_temp: Number(raw.body_temp),\n    fever_flag: Number(raw.fever_flag),\n    risk_level: String(raw.risk_level),\n    timestamp: String(raw.timestamp)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "7ff09f62f863b9dd",
+                "7fc59cb87370c361"
+            ]
+        ]
+    },
+    {
+        "id": "7ff09f62f863b9dd",
+        "type": "influxdb out",
+        "z": "9924cdd99f02fb80",
+        "influxdb": "60a77371a30a016c",
+        "name": "aupp_lab",
+        "measurement": "bmp280",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 880,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7fc59cb87370c361",
+        "type": "debug",
+        "z": "9924cdd99f02fb80",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8737b1971be786ea",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "60a77371a30a016c",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "aupp_lab",
+        "name": "aupp_lab",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "timeout": 10,
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "8509aaaf6714db4a",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-influxdb": "0.7.0"
+        }
+    }
+]
