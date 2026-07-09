@@ -1,11 +1,11 @@
-import cuda_config
-from camera import Camera
-from face_detector import FaceDetector
-from face_embedding import FaceEmbedding
+import face_registration.cuda_config
+from face_registration.camera import Camera
+from face_registration.face_detector import FaceDetector
+from face_registration.face_embedding import FaceEmbedding
 from database import Database
-from registration import Registration
-from gui import RegistrationGUI
-from excel import ExcelManager
+from face_registration.registration import Registration
+from face_registration.gui import RegistrationGUI
+from face_registration.excel import ExcelManager
 
 
 
