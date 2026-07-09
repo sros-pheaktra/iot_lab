@@ -1,3 +1,4 @@
 .vscode/
 Finger_Detection_Assignment/myenv/
 __pycache__/
+.venv
